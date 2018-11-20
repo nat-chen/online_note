@@ -1,0 +1,97 @@
+body, html{
+  margin: 0;
+  height: 100%;
+  font: 14px/1.4 'Arial';
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#header {
+  height: 30px;
+  font-size: 12px;
+  background: #005792;
+  padding: 10px 6px;
+
+  a {
+    display: block;
+    font-size: 12px;
+    margin-top: 6px;
+  }
+  
+  .user-area {
+    padding-right: 16px;
+    float: right;
+
+    li {
+      float: left;
+      margin-left: 5px;
+      padding: 2px 1px;
+      text-align: center;
+      span {
+        color: #fff;
+        display: block;
+        margin-top: 6px;
+      }
+    }
+
+    img {
+      height: 18px;
+      margin-top: 5px;
+      border-radius: 50%;
+    }
+  }
+
+  .setting{
+    float: right;
+    margin-left: 9px;
+    display: none;
+  }
+  .add-note{
+    float: left;
+    margin-left: 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+  .login{
+    float: right;
+    margin-left: 16px;
+  }
+}
+
+#content{
+  position: relative;
+  height: -webkit-calc(100% - 30px);
+  height: calc(100% - 30px);
+}
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars, .twinkling{
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:block;
+}
+.stars {
+  background:#d1f4fa repeat top center;
+  z-index:-2;
+}
+
+.twinkling{
+  background:transparent repeat top center;
+  z-index:-1;
+  animation:move-twink-back 200s linear infinite;
+}
